@@ -14,7 +14,7 @@ class VeiculosController extends Controller
      */
     public function index()
     {
-        Veiculo::orderBy('created_at', 'DESC')->get();
+        return Veiculo::orderBy('created_at', 'DESC')->get();
     }
 
     /**
