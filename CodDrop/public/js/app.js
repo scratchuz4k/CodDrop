@@ -3628,8 +3628,11 @@ __webpack_require__.r(__webpack_exports__);
 
 var routes = [{
   path: '/',
-  component: _layout_DashboardLayout_vue__WEBPACK_IMPORTED_MODULE_0__.default,
-  redirect: '/admin/overview'
+  name: 'home',
+  component: Home,
+  meta: {
+    auth: undefined
+  }
 }, {
   path: '/admin',
   component: _layout_DashboardLayout_vue__WEBPACK_IMPORTED_MODULE_0__.default,
